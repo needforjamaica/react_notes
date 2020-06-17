@@ -19,6 +19,7 @@ class NotesList extends React.Component {
                             })
                         }
                     </TransitionGroup>
+                    test
                 </div>
             </div>
         )
