@@ -4,6 +4,7 @@ import {
     NOTE_SET_FILTERED,
     NOTE_MODAL_SET_DATA,
     NOTE_SET_SEARCH,
+    NOTE_SHOW_COMPLETED,
 } from '../actions/actionTypes';
 
 const initialState = {
@@ -18,7 +19,8 @@ const initialState = {
     },
     search: '',
     notes: [],
-    allNotes: []
+    allNotes: [],
+    showCompleted: false
 }
 
 export default (state = initialState, action) => {
@@ -38,6 +40,10 @@ export default (state = initialState, action) => {
         case NOTE_GET_ALL_LOADING:
             return {
                 ...state, notesAllLoading: action.data
+            }
+        case NOTE_SHOW_COMPLETED:
+            return {
+                ...state, showCompleted: action.data
             }
         case NOTE_MODAL_SET_DATA:
             state.noteModal = {...state.noteModal, ...action.data};

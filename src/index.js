@@ -7,6 +7,19 @@ import {applyMiddleware, compose, createStore} from 'redux';
 import {Provider} from 'react-redux';
 import rootReducer from './store/reducers/rootReducer';
 import thunk from "redux-thunk";
+import iTomPreloader from "itom-preloader-es6";
+import bigPic from './assets/img/big_pic.jpg'
+
+const preloader = new iTomPreloader({
+    backgroundColor: '#6f42c1',
+    dotColor: '#FFFFFF',
+    // alwaysShow: false,
+    // timeout: 3000,
+    // alwaysShow: true,
+    // timeout: 500,
+    images: [bigPic]
+});
+preloader.check();
 
 const composeEnhancers =
     typeof window === 'object' &&
@@ -20,7 +33,8 @@ const store = createStore(
     )
 )
 
-String.prototype.ucfirst = function() {
+// eslint-disable-next-line
+String.prototype.ucfirst = function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
 

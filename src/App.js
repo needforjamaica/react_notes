@@ -1,7 +1,8 @@
 import React from "react";
-import Layout from "./hoc/layout";
+import Layout from "./components/hoc/Layout/Layout";
 import Notes from "./components/Notes/Notes";
-import About from "./components/About";
+import About from "./components/About/About";
+import BigPic from "./components/BigPic/BigPic";
 import './style.scss';
 import {Route, Switch} from 'react-router-dom';
 import {Helmet} from "react-helmet";
@@ -17,6 +18,7 @@ class App extends React.Component {
                 <Layout>
                     <Switch>
                         <Route path="/about" component={About}></Route>
+                        <Route path="/big-pic" component={BigPic}></Route>
                         <Route path="/" component={Notes}></Route>
                     </Switch>
                 </Layout>

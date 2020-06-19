@@ -1,0 +1,64 @@
+li.note-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+
+  .checkbox-container {
+    flex-grow: 1;
+    display: flex;
+    max-width: calc(100% - 160px);
+    overflow: hidden;
+    align-items: center;
+
+    .form-check-input {
+      margin: 0 10px 0 15px;
+    }
+  }
+
+  label {
+    user-select: none;
+    padding: 15px 15px 15px 0;
+    width: 100%;
+    margin: 0;
+    max-width: calc(100% - 20px);
+    overflow: hidden;
+  }
+
+  &.completed-note label {
+    text-decoration: line-through;
+    opacity: .8;
+    display: block;
+  }
+
+  .btns-container {
+    display: flex;
+
+    .btn-remove, .btn-edit {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  li.note-block {
+    .checkbox-container {
+      max-width: calc(100% - 100px);
+      .form-check-input {
+        margin: 0 10px 0 10px;
+      }
+    }
+
+    .btns-container {
+      flex-wrap: wrap;
+      width: 80px;
+      justify-content: flex-end;
+      .btn-remove{
+        margin: 0  10px  10px  0;
+      }
+      .btn-edit {
+        margin: 10px  10px  10px  0;
+      }
+    }
+  }
+}

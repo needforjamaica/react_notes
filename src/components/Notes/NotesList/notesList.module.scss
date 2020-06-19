@@ -1,0 +1,25 @@
+li.item-enter.list-group-item {
+  max-height: 0;
+  opacity: 0;
+}
+
+li.item-enter-active.list-group-item {
+  max-height: 100px;
+  opacity: 1;
+  transition: max-height 400ms ease-in, opacity 200ms ease-in 200ms;
+}
+
+li.item-exit.list-group-item {
+  max-height: 100px;
+  transform: translate(0);
+}
+
+li.item-exit-active.list-group-item {
+  max-height: 0;
+  transform: translate(-100vw);
+  transition: transform ease-in 400ms, max-height 200ms ease-out 400ms;
+}
+
+li.list-group-item {
+  margin-bottom: -1px;
+}
