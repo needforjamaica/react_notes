@@ -13,10 +13,6 @@ import bigPic from './assets/img/big_pic.jpg'
 const preloader = new iTomPreloader({
     backgroundColor: '#6f42c1',
     dotColor: '#FFFFFF',
-    // alwaysShow: false,
-    // timeout: 3000,
-    // alwaysShow: true,
-    // timeout: 500,
     images: [bigPic]
 });
 preloader.check();

@@ -12,7 +12,7 @@ export default () => {
                         activeClassName={css['active']}
                         to="/"
                         exact
-                    >Notes</NavLink>
+                    >Notes app</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink

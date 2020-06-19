@@ -54,7 +54,7 @@ class Notes extends React.Component {
                 <p><b>store</b> - папка с файлами отвечающую за работу с состоянием приложения (Redux)</p>
                 <p><b>store/actions/actionTypes</b> - файл с константами имен экшнов, чтобы удобнее использовать их и не путать названия</p>
                 <p><b>store/actions</b> - файлы с экшнами, для манипуляции с данными</p>
-                <p><b>store/reducers</b> - файлы редьюсеров для установки нового стэйта</p>
+                <p><b>store/reducers</b> - файлы редьюсеров для установки нового стэйта. Все файлы объединены в один в rootReducer.js и уже он подключается в index.js</p>
                 <p>Подробнее со структурой можно ознакомиться <a href="https://github.com/needforjamaica/react_notes" target="_blank" rel="noopener noreferrer">в репозитории на github</a></p>
                 <h2>CSS</h2>
                 <p>Все стили заданы через CSS Modules, что делает компоненты независимыми друг от друга, в общем файле только подключение bootstrap 4 и общая keyframe анимация. Все стили написаны с помощью препроцессора SASS, в формате SCSS</p>
