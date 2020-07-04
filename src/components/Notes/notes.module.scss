@@ -1,31 +1,33 @@
-.note-modal-enter {
-  opacity: 0;
+.noteModalEnter {
+    opacity: 0;
 }
 
-.note-modal-enter-active {
-  opacity: 1;
-  transition: opacity 200ms;
+.noteModalEnterActive {
+    opacity: 1;
+    transition: opacity 200ms;
 }
 
-.notes-loader {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  background: transparent;
-  border-top: 4px solid #007bff;
-  border-right: 4px solid transparent;
-  border-radius: 50%;
-  -webkit-animation: 1s spin linear infinite;
-  animation: 1s spin linear infinite;
+.notesLoader {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background: transparent;
+    border-top: 4px solid #007bff;
+    border-right: 4px solid transparent;
+    border-radius: 50%;
+
+    :global {
+        animation: 1s spin linear infinite;
+    }
 }
 
-.search-field {
-  width: 100%;
-  margin-bottom: 15px;
-  height: 40px;
+.searchField {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 40px;
 }
 
-.no-notes {
-  line-height: 57px;
-  margin-bottom: 15px;
+.noNotes {
+    line-height: 57px;
+    margin-bottom: 15px;
 }

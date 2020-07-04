@@ -1,0 +1,38 @@
+.header {
+    background: #6f42c1;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navLink {
+        display: inline-block;
+        color: white;
+        opacity: 0.8;
+        padding: 3px 10px;
+        line-height: 20px;
+        margin: 17px 10px 16px 10px;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+            opacity: 1;
+            text-decoration: none;
+        }
+
+        &.active {
+            opacity: 1;
+            border-bottom: 1px solid white;
+        }
+    }
+
+    .navText {
+        display: inline-block;
+        color: white;
+        padding: 3px 10px;
+        line-height: 20px;
+        margin: 17px 0 16px 10px;
+    }
+}

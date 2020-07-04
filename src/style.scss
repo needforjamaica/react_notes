@@ -1,13 +1,36 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~itom-preloader-es6/style.scss';
+@import '~react-notifications-component/dist/scss/notification';
+@import '~animate.css/animate.min.css';
 
 @keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error {
+    border-color: darkred;
+    color: darkred;
+}
+
+span.error {
+    margin: 5px 0;
+}
+
+.form-control {
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: initial;
+    box-shadow: none;
+
+    &.error {
+        border-color: darkred !important;
+    }
 }
